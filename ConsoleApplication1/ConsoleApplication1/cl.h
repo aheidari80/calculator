@@ -2,10 +2,10 @@
 using namespace std;
 float number();
 void op(float, float);
-float q(float, float);
-float w(float, float);
-float e(float, float);
-float r(float, float);
+float add(float, float);
+float sub(float, float);
+float mul(float, float);
+float divide(float, float);
 void as()
 {
 	float a, b, q=1;
@@ -36,28 +36,28 @@ void op(float a, float b)
 	cin >> op;
 	switch (op)
 	{
-	case'+':cout << q(a, b); break;
-	case'-':cout << w(a, b); break;
-	case'*':cout << e(a, b); break;
-	case'/':cout << r(a, b); break;
+	case'+':cout << add(a, b); break;
+	case'-':cout << sub(a, b); break;
+	case'*':cout << mul(a, b); break;
+	case'/':cout << divide(a, b); break;
 	default:cout << "error !!!"; break;
 	}
 }
-float q(float a, float b)
+float add(float a, float b)
 {
 	return a + b;
 }
-float w(float a, float b)
+float sub(float a, float b)
 {
 	float c;
 	c = a - b;
 	return c;
 }
-float e(float a, float b)
+float mul(float a, float b)
 {
 	return a*b;
 }
-float r(float a, float b)
+float divide(float a, float b)
 {
 	return a / b;
 }
